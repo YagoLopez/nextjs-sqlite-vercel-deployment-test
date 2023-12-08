@@ -20,6 +20,7 @@ export default async function Home() {
   console.log('res', res)
 
 
+/*
   const onCreateProduct = async ()=>{
     "use server"
     const productId = Date.now()
@@ -34,14 +35,17 @@ export default async function Home() {
       }})
     console.log('res', res)
   }
+*/
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-12">
+{/*
       <form action={onCreateProduct}>
         <button type="submit" className="bg-blue-400 hover:bg-blue-500 p-3 rounded">
           Create product
         </button>
       </form>
+*/}
       <pre>
         {JSON.stringify(products, null, 2)}
       </pre>
