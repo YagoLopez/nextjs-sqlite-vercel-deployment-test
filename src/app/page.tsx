@@ -1,6 +1,8 @@
 import prisma from "../../prisma/db"
+import { unstable_noStore as noStore } from 'next/cache';
 
 export default async function Home() {
+  noStore()
 
   const products = await prisma.product.findMany()
   console.log('products', products)
@@ -19,6 +21,8 @@ export default async function Home() {
       }})
     console.log('res', res)
   }
+
+  onCreateProduct()
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-12">
