@@ -20,8 +20,8 @@ export default function Card({
   footerRight,
 }: ICard) {
   return (
-    <div className="rounded overflow-hidden shadow-2xl flex flex-col hover:scale-105 transition duration-150">
-      <Link href="page2">
+    <div className="rounded-md overflow-hidden shadow-2xl flex flex-col hover:scale-105 transition duration-150">
+      <Link href="products/33">
         <div className="relative">
           <img
             className="w-full"
@@ -33,7 +33,7 @@ export default function Card({
             {tag}
           </div>
         </div>
-        <div className="px-6 py-4 mb-auto">
+        <div className="px-6 py-4 mb-auto bg-white">
           <div className="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">
             {title}
           </div>
