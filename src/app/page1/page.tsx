@@ -39,6 +39,15 @@ export default function Page1() {
           footerLeft="Footer Left"
           footerRight="Footer Right"
         />
+
+        <Card
+          title="Título 2"
+          content="Contenido 2"
+          imageUrl="https://images.pexels.com/photos/6086/food-salad-healthy-vegetables.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
+          tag="Etiqueta"
+          footerLeft="Footer Left"
+          footerRight="Footer Right"
+        />
       </div>
     </div>
   )

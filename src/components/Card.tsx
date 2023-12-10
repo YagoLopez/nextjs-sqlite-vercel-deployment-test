@@ -1,3 +1,7 @@
+import Link from "next/link"
+import { IoMdInformationCircleOutline } from "react-icons/io"
+import { BsFilePpt } from "react-icons/bs"
+
 interface ICard {
   imageUrl: string
   title: string
@@ -6,7 +10,6 @@ interface ICard {
   footerLeft: string
   footerRight: string
 }
-import { IoMdInformationCircleOutline } from "react-icons/io"
 
 export default function Card({
   imageUrl,
@@ -17,8 +20,8 @@ export default function Card({
   footerRight,
 }: ICard) {
   return (
-    <div className="rounded overflow-hidden shadow-xl flex flex-col hover:scale-105 transition duration-150">
-      <a href="#">
+    <div className="rounded overflow-hidden shadow-2xl flex flex-col hover:scale-105 transition duration-150">
+      <Link href="page2">
         <div className="relative">
           <img
             className="w-full"
@@ -42,10 +45,11 @@ export default function Card({
             <span className="ml-1">{footerLeft}</span>
           </span>
           <span className="py-1 text-xs font-regular text-gray-900 mr-1 flex flex-row items-center">
+            <BsFilePpt className="text-lg" />
             <span className="ml-1">{footerRight}</span>
           </span>
         </div>
-      </a>
+      </Link>
     </div>
   )
 }
